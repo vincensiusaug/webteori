@@ -1,0 +1,144 @@
+* { margin:0; padding:0; }
+body {
+    width: 100%;
+    background: rgb(215, 224, 228);
+    margin: 0;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(50, 50, 50);
+}
+
+button[name=logout] {
+    background: none;
+    border: none;
+    color: rgb(50, 50, 50);
+}
+
+button[name=logout]:hover {
+    color: slategray;
+}
+
+button[name=login] {
+    margin: 8px;
+    padding: 8px;
+    width: 200px;
+    background: none;
+    outline: none;
+    border: 2px solid slategray;
+}
+
+button[name=login]:hover {
+    background: slategray;
+    color: whitesmoke;
+    transition: 350ms;
+    cursor: pointer;
+}
+
+header {
+    width: 100vw;
+    background: whitesmoke;
+    position: fixed;
+    top: 0;
+    padding: 16px 0;
+    box-shadow: 0 0 2px 2px rgb(173, 173, 173);
+}
+
+.nav-header-main {
+    width: calc(100vw - 40px);
+    margin: 0 auto;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.nav-header-main > * {
+  display: inline-block;
+}
+
+.nav-header-main > .header-account {
+    float: right;
+}
+
+.nav-header-main a {
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+}
+
+.header-account > * {
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.header-account > .header-profile {
+    color: rgb(50, 50, 50);
+}
+
+
+
+
+
+main {
+    margin-top: 60px;
+    height: 100%;
+}
+
+
+
+
+
+.login-container {
+    top: 0;
+    background: whitesmoke;
+    width: 400px;
+    padding: 16px;
+    text-align: center;
+    margin:0 auto;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+
+    box-shadow: 0px 0px 2px 2px rgb(167, 167, 167);
+}
+
+.login-container > .login-title {
+    font-weight: bold;
+    font-size: 3.5em;
+    margin: 60px 10px;
+    color: slategray;
+}
+
+.login-container > .login-title:hover {
+    cursor: default;
+}
+
+.login-container input {
+    padding: 0.5em;
+    margin: 8px;
+    background: whitesmoke;
+    width: 300px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid slategray;
+    letter-spacing: 0.1em;
+}
+
+.login-container input:focus {
+    border-color: black;
+}
+
+.login-container a {
+    color: slategray;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    color: rgb(80, 79, 79);
+}
+
+.login-container .login-extra-container {
+    color: black;
+    padding: 16px;
+    font-size: 0.8em;
+}
